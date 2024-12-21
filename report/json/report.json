@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -68,7 +68,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Test Case 1",
+          "title": "Test Case 4",
           "ok": true,
           "tags": [],
           "tests": [
@@ -82,111 +82,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 339,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-12-21T10:12:54.824Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "31be70adcd52654ff551-f85ed6fcb0bdac22dc3d",
-          "file": "test.spec.js",
-          "line": 7,
-          "column": 1
-        },
-        {
-          "title": "Test Case 2",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 741,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "User created successfully!\n"
-                    }
-                  ],
-                  "stderr": [
-                    {
-                      "text": "AJV Validation Errors: data must have required property 'name'\n"
-                    }
-                  ],
-                  "retry": 0,
-                  "startTime": "2024-12-21T10:12:54.801Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "31be70adcd52654ff551-7917f629b94aed27fb53",
-          "file": "test.spec.js",
-          "line": 29,
-          "column": 1
-        },
-        {
-          "title": "Test Case 3",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "status": "passed",
-                  "duration": 740,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-12-21T10:12:54.863Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "31be70adcd52654ff551-de8e402c65f576863e0d",
-          "file": "test.spec.js",
-          "line": 58,
-          "column": 1
-        },
-        {
-          "title": "Test Case 4",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "status": "passed",
-                  "duration": 689,
+                  "duration": 547,
                   "errors": [],
                   "stdout": [
                     {
@@ -195,7 +91,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-21T10:12:54.811Z",
+                  "startTime": "2024-12-21T14:25:36.371Z",
                   "attachments": []
                 }
               ],
@@ -204,7 +100,7 @@
           ],
           "id": "31be70adcd52654ff551-7fdd2cf3735e42e97e38",
           "file": "test.spec.js",
-          "line": 83,
+          "line": 87,
           "column": 1
         }
       ]
@@ -212,9 +108,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-12-21T10:12:52.705Z",
-    "duration": 2952.151,
-    "expected": 4,
+    "startTime": "2024-12-21T14:25:35.580Z",
+    "duration": 1370.8870000000002,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

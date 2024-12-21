@@ -1,18 +1,11 @@
 {
-    "oneOf": [
-      {
-        "type": "object",
-        "properties": {
-          "status": {
-            "type": "integer",
-            "enum": [400, 404, 500]
-          },
-          "error": {
-            "type": "string"
-          }
-        },
-        "required": ["status", "error"]
-      },
-      {}
-    ]
+  "type": "object",
+  "properties": {
+    "error": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
   }
+}

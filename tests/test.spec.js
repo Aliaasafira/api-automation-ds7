@@ -36,6 +36,8 @@ test ('Test Case 2', async ({ request }) => {
       json: userData,
    });
 
+   console.log(await response.json());
+
    expect(response.status()).toBe(201)
 
    const responseData = await response.json();
@@ -77,15 +79,14 @@ test ('Test Case 3', async ({ request }) => {
     console.error("AJV Validation Errors:", ajv.errorsText());
   }
 
+  console.log(await response.json());
+
 });
 
 //DELETE REQUEST
 test ('Test Case 4', async ({ request }) => {
-  // const userId = 2;
+  
   const url = 'https://reqres.in/api/users/2';
-
-  const deleteResponseSchema = require('./jsonschema/delete-object-schema.json');
-  const validateResponse = ajv.compile(deleteResponseSchema);
 
   const response = await request.delete(url);
 
@@ -94,9 +95,13 @@ test ('Test Case 4', async ({ request }) => {
   if (response.status() === 204) {
     console.log("User deleted successfully!");
   } else {
-    console.error(`Error creating user: ${await response.text()}`);
+    console.error(`Error deleting user: ${await response.text()}`);
   }
 
+  const valid = ajv.validate(require('./jsonschema/delete-object-schema.json'), response)
+  if (!valid){
+   console.error("AJV Validation Errors:", ajv.errorsText());
+ }
 
 });
 
